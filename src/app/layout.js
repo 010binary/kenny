@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 
 const urbanist = localFont({
   src: "./fonts/Urbanist-VariableFont_wght.ttf",
@@ -26,9 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${urbanist.variable} ${urbanistItalic.variable} antialiased bg-black`}
       >
-        <Navbar />
         {children}
-        {/* <Footer /> */}
       </body>
     </html>
   );
