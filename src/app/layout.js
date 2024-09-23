@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${urbanist.variable} ${urbanistItalic.variable} antialiased bg-black`}
+        className={`${urbanist.variable} ${urbanistItalic.variable} antialiased bg-white`}
       >
         {children}
       </body>
