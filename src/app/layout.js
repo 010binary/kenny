@@ -1,14 +1,17 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const urbanist = localFont({
+  src: "./fonts/Urbanist-VariableFont_wght.ttf",
+  variable: "--font-urbanist",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+
+const urbanistItalic = localFont({
+  src: "./fonts/Urbanist-Italic-VariableFont_wght.ttf",
+  variable: "--font-urbanist",
   weight: "100 900",
 });
 
@@ -21,9 +24,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${urbanist.variable} ${urbanistItalic.variable} antialiased bg-black`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
