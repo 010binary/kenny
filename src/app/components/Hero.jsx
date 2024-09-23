@@ -2,6 +2,12 @@ import Image from "next/image";
 import { HeroImage } from "../Assets";
 import { Buttons } from "./custom/Button";
 
+const place = [
+  { name: "Investment Sales", id: 1 },
+  { name: "Property Management", id: 2 },
+  { name: "Advisory Services", id: 3 },
+];
+
 export const Hero = () => {
   return (
     <>
@@ -12,45 +18,40 @@ export const Hero = () => {
           alt="hero"
         />
       </div>
-      <div className="text-white">
-        <p>
-          <span
-            className="block capitalize
-          text-xl"
-          >
-            Knowledge.
-          </span>
-          <span
-            className="block capitalize
-          text-xl"
-          >
-            Experience.
-          </span>
-          <span
-            className="block capitalize
-          text-xl"
-          >
-            Integrity.
-          </span>
-          <span
-            className="block capitalize
-          text-xl"
-          >
-            Results.
-          </span>
+      <div className="absolute top-1/4 left-40 text-white">
+        <p className="text-6xl leading-snug font-bold">
+          <span className="block">Knowledge.</span>
+          <span className="block">Experience.</span>
+          <span className="block">Integrity.</span>
+          <span className="block">Results.</span>
         </p>
       </div>
-      <div className="text-white border-t border-white pt-1">
-        <p>
-          sit cursus massa non laoreet lobortis, Cras est. placerat tincidunt
+      <div className="absolute bottom-24 right-5 text-white max-w-2xl border-t border-white pt-4">
+        <p className="text-lg">
+          Sit cursus massa non laoreet lobortis, Cras est. placerat tincidunt
           volutpat non, nisi id nisi non eu volutpat dui felis, nec amet,
-          laoreet ex in amet, lacus .Nullam vitae tincidunt ex ultrices
-          tincidunt ipsum efficitur. Quisque cursus tortor. volutpat maximus
-          lorem. quis vitae scelerisque dui. adipiscing fringilla , luctus
-          consectetur viverra hendrerit Nunc quam nec lorem. lorem. urna.
-          placerat lorem. I
+          laoreet ex in amet, lacus. Nullam vitae tincidunt ex ultrices
+          tincidunt ipsum efficitur. Quisque cursus tortor, volutpat maximus
+          lorem. Quis vitae scelerisque dui, adipiscing fringilla.
         </p>
-        <Buttons text={"hello"} textcolor={"white"} />
+        <div className="mt-4">
+          <Buttons
+            text={"Find your next commercial property"}
+            textcolor={"white"}
+          />
+        </div>
+      </div>
+      <div className="bg-white absolute bottom-0 right-0 w-2xl rounded-tl-xl">
+        <section className=" flex justify-between ">
+          {place.map((item) => {
+            return (
+              <div className="mr-4 px-4 py-4 " key={item.id}>
+                <Buttons text={item.name} textsize={"base"} />
+              </div>
+            );
+          })}
+          ;
+        </section>
       </div>
     </>
   );

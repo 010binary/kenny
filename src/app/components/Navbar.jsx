@@ -9,32 +9,47 @@ const Navbar = () => {
         </div>
         <ul className="text-white w-1/2 flex justify-between text-lg">
           <li>
-            <a href="#" className="uppercase underline underline-offset-8">
+            <a href="#" className="uppercase underline underline-offset-8 duration-500">
               Home
             </a>
           </li>
           <li>
-            <a href="#" className="uppercase">
+            <a
+              href="#"
+              className="uppercase hover:underline hover:underline-offset-8 duration-500"
+            >
               Advisory
             </a>
           </li>
           <li>
-            <a href="#" className="uppercase">
+            <a
+              href="#"
+              className="uppercase hover:underline hover:underline-offset-8 duration-500"
+            >
               RESIDENTIAL
             </a>
           </li>
           <li>
-            <a href="#" className="uppercase">
+            <a
+              href="#"
+              className="uppercase hover:underline hover:underline-offset-8 duration-500"
+            >
               COMMERCIAL
             </a>
           </li>
           <li>
-            <a href="#" className="uppercase">
+            <a
+              href="#"
+              className="uppercase hover:underline hover:underline-offset-8 duration-500"
+            >
               BLOG
             </a>
           </li>
           <li>
-            <a href="#" className="uppercase">
+            <a
+              href="#"
+              className="uppercase hover:underline hover:underline-offset-8 duration-500"
+            >
               CONTACT
             </a>
           </li>
