@@ -1,10 +1,12 @@
+import Image from "next/image";
+import { HeroImage } from "../Assets";
+
 export const Hero = () => {
   return (
-    <div className="relative h-screen w-full">
+    <div className="-z-10 h-screen w-full">
       <Image
-        src="/images/hero.jpg"
-        layout="fill"
-        objectFit="cover"
+        src={HeroImage}
+        className="absolute top-0 left-0 -z-10 object-cover w-full h-full"
         alt="hero"
       />
     </div>
