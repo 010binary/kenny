@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import { TeamsImage } from "../Assets";
 import { Buttons } from "./custom/Button";
 import { CitiesCard, CitiesCard1, CitiesCard2, CitiesCard3 } from "../Assets";
