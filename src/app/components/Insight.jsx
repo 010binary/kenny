@@ -5,7 +5,7 @@ import { Buttons } from "./custom/Button";
 
 const Card = ({ image, title, description }) => {
   return (
-    <div className="max-w-sm bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="max-w-sm bg-white  shadow-md overflow-hidden">
       <Image src={image} alt={title} layout="responsive" width={400} height={200} />
       <div className="p-6">
         <h2 className="text-lg font-semibold mb-2">{title}</h2>
