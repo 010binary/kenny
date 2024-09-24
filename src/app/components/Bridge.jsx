@@ -3,8 +3,10 @@ import React from "react";
 const GetStartedSection = () => {
   return (
     <>
-      <div className="flex justify-center items-center">
-        <section className="bg-[#F3F7FF] text-gray-800 p-12 w-1/2 h-auto  rounded-md shadow-lg">
+      <div className="relative flex justify-center items-center w-full h-1/2 p-12">
+      <section className="absolute bottom-0 w-full h-1/2 bg-[#151D30]">
+      </section>
+        <section className="bg-[#F3F7FF] z-50 text-gray-800 p-12 w-1/2 h-auto rounded-md shadow-lg">
           <div className="mx-auto flex flex-col lg:flex-row justify-between">
             {/* Left Section */}
             <div className="lg:w-2/3 mb-8 lg:mb-0">

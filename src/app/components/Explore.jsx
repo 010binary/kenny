@@ -28,24 +28,41 @@ const ExploreProperties = () => {
                         <p className="mb-6 text-xl text-blue-900">I'm looking for</p>
 
                         <div className="space-y-4 mb-6 relative">
-                            {['Property Type', 'Select location'].map((option, index) => (
-                                <div key={index} className="relative">
-                                    <select className="appearance-none bg-transparent w-full border-b-2 border-gray-300 text-gray-700 text-xl font-semibold focus:outline-none pb-2">
-                                        <option>{option}</option>
-                                    </select>
-                                    <ChevronDown className="absolute right-0 bottom-3 h-5 w-5 text-gray-400" />
-                                </div>
-                            ))}
-                            <button className="text-blue-600 text-sm absolute bottom-0 right-0">Reset ↻</button>
-                        </div>
-                    </div>
+  {[
+    {
+      label: 'Property Type',
+      options: ['Apartment', 'House', 'Studio', 'Condo'],
+    },
+    {
+      label: 'Select location',
+      options: ['New York', 'San Francisco', 'Los Angeles', 'Chicago'],
+    },
+  ].map((dropdown, index) => (
+    <div key={index} className="relative">
+      <select className="appearance-none bg-transparent w-full border-b-2 border-gray-300 text-gray-700 text-xl font-semibold focus:outline-none pb-2">
+        {/* The main label option */}
+        <option>{dropdown.label}</option>
+        {/* Render dummy options */}
+        {dropdown.options.map((opt, optIndex) => (
+          <option key={optIndex} value={opt}>
+            {opt}
+          </option>
+        ))}
+      </select>
+      <ChevronDown className="absolute right-0 bottom-3 h-5 w-5 text-gray-400" />
+    </div>
+  ))}
+  
+  <div className="text-blue-600 text-sm text-right">Reset ↻</div>
+</div>
+</div>
 
                     <div className="space-y-4">
                         {['View residential', 'Advisory services'].map((text, index) => (
-                            <button key={index} className={`flex items-center space-x-2 ${index === 0 ? 'text-blue-600' : 'text-gray-600'} font-semibold`}>
+                            <div key={index} className={`flex items-center space-x-2 ${index === 0 ? 'text-gray-600' : 'text-gray-600'} font-semibold`}>
                                 <Buttons className="h-5 w-5" />
                                 <span>{text}</span>
-                            </button>
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -62,10 +79,10 @@ const ExploreProperties = () => {
                                 <p className="text-gray-600 mb-4">
                                     sit cursus massa non laoreet lobortis, Cras est tincidunt volutpat non, nisi id nisi non eu vo
                                 </p>
-                                <button className="flex items-center space-x-2 text-[#23314F] font-semibold">
+                                <div className="flex items-center space-x-2 text-[#23314F] font-semibold">
                                     <Buttons className="h-5 w-5" />
                                     <span>More info</span>
-                                </button>
+                                </div>
                             </div>
                         </div>
                         {/* Right Column */}

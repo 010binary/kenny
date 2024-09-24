@@ -31,7 +31,7 @@ export const Teams = () => {
 
       <div className="bg-white space-y-4 py-4">
         <section className="p-10 px-12 flex justify-between items-center">
-          <p className="w-1/3 text-4xl font-bold">
+          <p className="w-1/3 text-4xl font-bold text-[#02365C]">
             Explore Some of the Cities We Cater For
           </p>
           <p className="w-1/3 text-justify">
