@@ -66,7 +66,7 @@ const Footer = () => {
 
       {/* Newsletter Subscription */}
       <div className="mt-12">
-        <div className="max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 bg-blue-800 p-6 rounded-md">
+        <div className="max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between  p-6 rounded-md">
           <h3 className="text-lg font-bold text-white">SUBSCRIBE TO OUR NEWSLETTER.</h3>
           <div className="flex w-full lg:w-auto">
             <input

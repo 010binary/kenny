@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FirstCard,SecondCard, ThirdCard, FourthCard } from "../Assets";
+import { Buttons } from "./custom/Button";
 
 const Card = ({ image, title, description }) => {
   return (
@@ -10,23 +11,7 @@ const Card = ({ image, title, description }) => {
         <h2 className="text-lg font-semibold mb-2">{title}</h2>
         <p className="text-gray-600 text-sm">{description}</p>
         <div className="mt-4">
-          <button className="flex items-center text-blue-500 font-medium">
-            <span>Read more</span>
-            <svg
-              className="ml-2 w-4 h-4"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
+          <Buttons text={"Read more"} textweight={"semibold"} />
         </div>
       </div>
     </div>
