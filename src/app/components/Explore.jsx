@@ -24,7 +24,7 @@ const ExploreProperties = () => {
             <h2 className="text-xl font-semibold mb-4 text-blue-900">EXPLORE WHAT WE CREATE</h2>
             <p className="mb-6 text-xl text-blue-900">I'm looking for</p>
 
-            <div className="space-y-4 mb-6">
+            <div className="space-y-4 mb-6 relative">
                 {['Property Type', 'Select location'].map((option, index) => (
                 <div key={index} className="relative">
                     <select className="appearance-none bg-transparent w-full border-b-2 border-gray-300 text-gray-700 text-xl font-semibold focus:outline-none pb-2">
