@@ -9,8 +9,8 @@ export const Teams = () => {
   return (
     <>
       <div className="flex bg-white">
-        <section>
-          <Image src={TeamsImage} className="w-auto h-auto" />
+        <section className="w-[52.5%]">
+          <Image src={TeamsImage} className="w-full h-auto" />
         </section>
         <section className=" bg-white w-1/2 px-20 flex justify-between flex-col py-8 ">
           <h2 className="text-5xl font-bold leading-snug border-b border-blue-950/60 pb-8 mb-4">
