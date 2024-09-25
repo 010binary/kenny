@@ -12,7 +12,7 @@ import CitiesCard1 from "./citiescard1.webp";
 import CitiesCard2 from "./citiescard2.webp";
 import CitiesCard3 from "./citiescard3.webp";
 import Globe from "./globe.png"
-import SkyScraper from "./skyScraper.png"
+import SkyScraper from "./skyscraper.png"
 
 
 export {  TeamsImage,
