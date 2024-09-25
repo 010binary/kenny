@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { HeroImage, Globe, SkyScraper } from "../Assets"; // Adjust your import paths accordingly
+import { HeroImage, Globe, SkyScraper } from "../Assets"; 
 import { Buttons } from "./custom/Button";
 import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
@@ -16,14 +16,14 @@ const place = [
 const skyscraperVariants = {
   hidden: { y: "100vh", opacity: 0 },
   visible: { y: 0, opacity: 1, transition: { duration: 2 } },
-  exit: { opacity: 0, transition: { duration: 1 } }, // Exit immediately
+  exit: { opacity: 0, transition: { duration: 1 } }, 
 };
 
 // Animation variants for globe
 const globeVariants = {
   hidden: { y: "-100vh", opacity: 0 },
   visible: { y: 0, opacity: 1, transition: { duration: 2 } },
-  exit: { opacity: 0, transition: { duration: 1 } }, // Exit immediately
+  exit: { opacity: 0, transition: { duration: 1 } }, 
 };
 
 // Animation variants for the "Navigate" text
